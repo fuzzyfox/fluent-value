@@ -1,0 +1,10 @@
+includes:
+  - vendor/pestphp/pest/extension.neon
+
+parameters:
+  level: 6
+  paths:
+    - src
+    - tests
+  universalObjectCratesClasses:
+    - FuzzyFox\FluentValue

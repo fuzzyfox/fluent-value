@@ -1,0 +1,52 @@
+{
+    "name": "fuzzyfox/fluent-value",
+    "description": "Fluent value objects with deep nesting and lazy evaluation support",
+    "type": "library",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "William Duyck",
+            "email": "fuzzyfox0@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "rector/rector": "^2.3",
+        "phpstan/phpstan": "^2.1",
+        "laravel/pint": "^1.27",
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-type-coverage": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "FuzzyFox\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FuzzyFox\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest --parallel",
+        "coverage": "vendor/bin/pest --coverage --min=100",
+        "lint": [
+            "vendor/bin/phpstan analyse",
+            "vendor/bin/pest --type-coverage"
+        ],
+        "format": [
+            "vendor/bin/rector process",
+            "vendor/bin/pint"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
