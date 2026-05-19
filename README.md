@@ -1,5 +1,12 @@
 # Fluent Value Object
 
+[![CI](https://github.com/fuzzyfox/fluent-value/actions/workflows/ci.yml/badge.svg)](https://github.com/fuzzyfox/fluent-value/actions/workflows/ci.yml)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/fuzzyfox/fluent-value.svg)](https://packagist.org/packages/fuzzyfox/fluent-value)
+[![Total Downloads](https://img.shields.io/packagist/dt/fuzzyfox/fluent-value.svg)](https://packagist.org/packages/fuzzyfox/fluent-value)
+[![PHP Version](https://img.shields.io/packagist/php-v/fuzzyfox/fluent-value.svg)](https://packagist.org/packages/fuzzyfox/fluent-value)
+[![License](https://img.shields.io/github/license/fuzzyfox/fluent-value.svg)](https://github.com/fuzzyfox/fluent-value/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/fuzzyfox/fluent-value.svg?style=social)](https://github.com/fuzzyfox/fluent-value/stargazers)
+
 A PHP package for creating fluent value objects that wrap arrays or preserve objects, providing both object syntax and ArrayAccess syntax with deep nesting and lazy evaluation support.
 
 ## Features
